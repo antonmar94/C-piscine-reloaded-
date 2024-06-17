@@ -6,12 +6,18 @@
 /*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 18:07:10 by antonio-          #+#    #+#             */
-/*   Updated: 2024/06/12 18:07:14 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:48:21 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-typedef struct point
+#ifndef FT_POINT_H
+
+# define FT_POINT_H
+
+typedef struct s_point
 {
-	int x;
-	int y;
-} t_point;
+	int	x;
+	int	y;
+}	t_point;
+
+#endif

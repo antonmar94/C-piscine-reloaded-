@@ -6,17 +6,17 @@
 /*   By: antonio- <antonio-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 16:52:57 by antonio-          #+#    #+#             */
-/*   Updated: 2024/04/11 17:22:20 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:37:30 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	print_str(char *str)
 {
 	while (*str)
 	{
-		write(1, str, 1);
+		ft_putchar(*str);
 		str++;
 	}
 }
@@ -39,7 +39,7 @@ void	print_args(int argc, char **argv)
 	while (i < argc)
 	{
 		print_str(argv[i]);
-		write(1, "\n", 1);
+		ft_putchar('\n');
 		i++;
 	}
 }

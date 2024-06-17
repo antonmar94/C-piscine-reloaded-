@@ -6,20 +6,22 @@
 /*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 18:45:56 by antonio-          #+#    #+#             */
-/*   Updated: 2024/06/12 18:50:48 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 13:10:41 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int(*f)(char*))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	num_one;
+	int	i;
 
+	i = 0;
 	num_one = 0;
-	while (**tab != 0)
+	while (tab[i] != 0)
 	{
-		if ((*f)(*tab) == 1)
+		if (f(tab[i]) == 1)
 			num_one++;
-		(*tab)++;
+		i++;
 	}
 	return (num_one);
 }

@@ -6,11 +6,11 @@
 /*   By: antonio- <antonio-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 18:24:32 by antonio-          #+#    #+#             */
-/*   Updated: 2024/04/04 18:26:31 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:36:53 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -19,7 +19,7 @@ void	ft_putstr(char *str)
 	index = str;
 	while (*index)
 	{
-		write(1, index, 1);
+		ft_putchar(*index);
 		index++;
 	}
 }

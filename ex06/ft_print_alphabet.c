@@ -6,11 +6,11 @@
 /*   By: antonio- <antonio-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 16:42:36 by antonio-          #+#    #+#             */
-/*   Updated: 2024/03/26 16:42:42 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:36:11 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
@@ -19,7 +19,7 @@ void	ft_print_alphabet(void)
 	a = 'a';
 	while (a <= 'z')
 	{
-		write(1, &a, 1);
+		ft_putchar(a);
 		a++;
 	}
 }

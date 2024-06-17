@@ -6,9 +6,8 @@
 /*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 18:07:29 by antonio-          #+#    #+#             */
-/*   Updated: 2024/06/12 18:07:32 by antonio-         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:26:40 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ((Value<0)?(-Value):(Value))
-
+#define ABS(Value) ((Value<0) ? (-Value) : (Value))
